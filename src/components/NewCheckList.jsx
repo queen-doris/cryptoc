@@ -18,7 +18,7 @@ const NewCheckList = () => {
           </section>
    <section className="flex items-center justify-center mt-5">
    <button className="flex items-center justify-center h-[30px] w-[165px] gap-7 p-1 rounded-[50px] bg-[#DAFB59]  text-[#23262F]">
-                     <p>Add Opportunity</p>
+                     <p>Add Checklist</p>
                   </button>
    </section>
          </section>

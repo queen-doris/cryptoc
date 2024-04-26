@@ -1,8 +1,8 @@
+import DashContent from "../components/DashContent";
 import DashNavigate from "../components/DashNavigate";
 import DashSidebar from "../components/DashSidebar";
-import ProposalContent from "../components/ProposalContent";
 
-const Task = () => {
+const Opportunity = () => {
    return ( 
       <>
       <section className="flex">
@@ -10,14 +10,12 @@ const Task = () => {
            <DashSidebar />
          </section>
          <section className="bg-[#F1F3F9] width">
-            <ProposalContent />
-            <section className="mr-3 mt-2">
+            <DashContent />
             <DashNavigate />
-            </section>
          </section>
       </section>
       </>
     );
 }
  
-export default Task;
+export default Opportunity;
