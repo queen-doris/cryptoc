@@ -1,6 +1,11 @@
+import React from "react";
+// import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+// import Task from '../pages/Task'
+
 const NavLinks = () => {
    return ( 
-      <>
+      
+<>
       <section className="mt-16">
          <section className="flex flex-col  text-[12px] text-[#8D8F93] gap-3 ml-3">
             <button className="flex gap-3 text-[#DAFB59] font-[500] items-center r  h-[40px] w-[170px] rounded-[50px] justify-center mr">
@@ -33,7 +38,7 @@ const NavLinks = () => {
                5
               </div>
             </button>
-            <button className="flex gap-3  font-[500] items-center  h-[40px] w-[170px] rounded-[50px] justify-center">
+            <button to="/Task" className="flex gap-3  font-[500] items-center  h-[40px] w-[170px] rounded-[50px] justify-center">
               <section className="flex gap-3 mr-12">
                 <img src="/Dashboard/Task.svg" alt="Task" width={18} height={10} />
                 <h1>Task</h1>
@@ -61,9 +66,54 @@ const NavLinks = () => {
               </section>
             </button>
          </section>
+         {/* <Routes>
+           <Route path="/Task" element={<Task />} />
+        </Routes> */}
       </section>
+
       </>
     );
 }
  
 export default NavLinks;
+
+
+// import React from 'react';
+// import { NavLink } from 'react-router-dom';
+
+// function NavLinks() {
+//   return (
+//     <section className="mt-16">
+//       <section className="flex flex-col  text-[12px] text-[#8D8F93] gap-3 ml-3">
+//       <nav>
+//       <button className="flex gap-3 text-[#DAFB59] font-[500] items-center r  h-[40px] w-[170px] rounded-[50px] justify-center mr">
+// //               <section className="flex gap-3 mr-2">
+// //                 <img src="/Dashboard/DashHome.svg" alt="Dashboard" width={18} height={10} />
+// //                 <h1 className="text-[#ffffff]">Dashboard</h1>
+// //               </section>
+// //   </button>
+//       <NavLink
+//         to="/"
+//         className={({ isActive }) => (isActive ? "isActive ? "bg-blue-500 text-white p-2 rounded-md"bg-gray-200 text-gray-900 p-2 rounded-md" : "link")}
+//       >
+//         Home
+//       </NavLink>
+//       <NavLink
+//         to="/Task"
+//         className={({ isActive }) => (isActive ? "link-active" : "link")}
+//       >
+//         Task
+//       </NavLink>
+//       <NavLink
+//         to="/contact"
+//         className={({ isActive }) => (isActive ? "link-active" : "link")}
+//       >
+//         Contact
+//       </NavLink>
+//     </nav>
+//       </section>
+//     </section>
+//   );
+// }
+
+// export default NavLinks;

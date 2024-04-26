@@ -1,14 +1,17 @@
 import DocumentUploader from "./DocumentUploader";
+import CheckInput from "./Inputs/CheckInput";
 import CustomInputs from "./Inputs/CustomInputs";
+import IconTextInput from "./Inputs/IconTextInput";
 
 const NewOpportunity = () => {
+  const options = ["Option 1", "Option 2", "Option 3"];
    return ( 
       <>
       <section>
-         <section className="flex items-center justify-center mt-5">
+         <section className="flex items-center justify-center mt-1">
             <h1 className="font-[800] text-[14px]">New Opportunity</h1>
          </section>
-         <section className="flex items-center justify-center mt-10">
+         <section className="flex items-center justify-center mt-7">
          <section className="">
             <CustomInputs
                label="Project Name"
@@ -30,18 +33,16 @@ const NewOpportunity = () => {
              />
              </section>
              <section className="gap-4 flex flex-row">
-             <CustomInputs
-               label="Feedback Deadline"
-               type="date"
-               placeholder="Feedback Deadline"
-               className="placeholder:text-[#A6A3A3]"
-             />
-             <CustomInputs
-               label="Project Name"
+             <IconTextInput
+             label="Feedback Deadline"
+              />
+             {/* <CustomInputs
+               label="Checklist"
                type="text"
-               placeholder="Project Name"
+               placeholder="ckecklist"
                className="placeholder:text-[#A6A3A3] w-[100%]"
-             />
+             /> */}
+             <CheckInput label="Dropdown Input" options={options} />
              </section>
              {/* <DateInputWithIcon /> */}
              </section>

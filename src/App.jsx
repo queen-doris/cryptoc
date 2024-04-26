@@ -1,11 +1,15 @@
 
-import Dashboard from './pages/Dashboard';
+// import Dashboard from './pages/Dashboard';
+import Task from './pages/Task';
 
 function App() {
   return (
-    <div className="">
-      <Dashboard />
+    <>
+       <div className="">
+      {/* <Dashboard /> */}
+      <Task />
     </div>
+    </>
   );
 }
 
