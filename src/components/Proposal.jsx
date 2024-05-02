@@ -1,7 +1,6 @@
 import SelectPhase from "./WithIconInputs/Select Phase";
 
 const Proposal = () => {
-  const options = ["Option 1", "Option 2", "Option 3"];
    return ( 
       <>
       <section>
