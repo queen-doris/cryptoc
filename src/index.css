@@ -123,6 +123,40 @@
   scrollbar-width: none;  /* Firefox */
 }
 
+/* Custom checkbox styles */
+/* Hides the native checkbox */
+.checkbox-custom {
+  appearance: none; /* Removes native appearance */
+  background-color: #EFF6FE; /* Set your desired unchecked background color */
+  width: 14px; /* Set the size */
+  height: 14px; /* Set the size */
+  border: 1px solid gray; /* Custom border color */
+  display: inline-block; /* Necessary for inline positioning */
+  position: relative; /* Positioning context for the pseudo-element */
+  cursor: pointer; /* Indicates the element is interactive */
+}
+
+/* Styles for when the checkbox is checked */
+.checkbox-custom:checked {
+  background-color: #EFF6FE; /* Set your desired checked background color */
+  /* Custom styles for the checkmark using a pseudo-element */
+}
+.checkbox-custom:checked::after {
+  content: '✓'; /* Checkmark icon */
+  color: rgb(69, 68, 68); /* Checkmark color */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  line-height: 1;
+}
+
+/* Optional: Focus styles for accessibility */
+.checkbox-custom:focus {
+  outline: none;
+}
+
 
 
 

@@ -1,6 +1,6 @@
-import LoginForm from "../../components/Login/LoginForm";
 import BMS from "../../components/Signup/BMS";
 import OwnSpace from "../../components/Signup/OwnSpace";
+import SignupForm from "../../components/Signup/SignupForm";
 
 const Login = () => {
     return (  
@@ -13,7 +13,7 @@ const Login = () => {
             <BMS />
         </section>
         <section className="w-[45%]">
-            <LoginForm />
+            <SignupForm />
         </section>
        </section>
         </>
